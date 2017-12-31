@@ -1,0 +1,3 @@
+# jack-the-giant-udemy-course
+
+Just a simple tutorial repo on libGdx following this course : https://www.udemy.com/the-complete-libgdx-game-course ...
