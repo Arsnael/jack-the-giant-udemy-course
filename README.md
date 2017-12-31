@@ -1,3 +1,3 @@
-# jack-the-giant-udemy-course
+# Jack the Giant - A libGdx game tutorial
 
 Just a simple tutorial repo on libGdx following this course : https://www.udemy.com/the-complete-libgdx-game-course ...
