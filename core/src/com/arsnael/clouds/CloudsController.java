@@ -3,6 +3,7 @@ package com.arsnael.clouds;
 import com.arsnael.collectables.Collectable;
 import com.arsnael.helpers.GameInfo;
 import com.arsnael.player.Player;
+import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
@@ -133,6 +134,15 @@ public class CloudsController {
         if(clouds.size == 4){
             createClouds();
             positionClouds(false);
+        }
+    }
+
+    public void removeOffScreenCollectables(){
+        for (int i=0; i<collectables.size; i++) {
+            if(collectables.get(i).getY() - GameInfo.HEIGHT / 2f - 15 > cameraY){
+                collectables.get(i).getTexture().dispose();
+                collectables.removeIndex(i);
+            }
         }
     }
 
